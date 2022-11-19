@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    N = input()
+    f_line =  input().split(" ")
+    setN = set(f_line) 
+    M = input()
+    s_line = input().split(" ")
+    setM = set(s_line)
+    x = setN.difference(setM)
+    y = setM.difference(setN)
+    ans = x.union(y)
+    print("\n".join(sorted(ans, key=int)) )

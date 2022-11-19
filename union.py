@@ -1,0 +1,6 @@
+n = int(input())
+set1 = set(input().split(" "))
+m = int(input())
+set2 = set(input().split(" "))
+set3 = set1.union(set2)
+print(len(set3))
